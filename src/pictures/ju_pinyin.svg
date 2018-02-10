@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40.957001"
+   height="40.3125"
+   viewBox="0 0 10.836539 10.666016"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="ju_pinyin.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="77.760138"
+     inkscape:cy="103.07347"
+     inkscape:document-units="mm"
+     inkscape:current-layer="text26"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="xiao"
+     style="display:inline"
+     transform="translate(-50.234882,-77.575302)">
+    <g
+       aria-label="jū"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Futura Std';-inkscape-font-specification:'Futura Std, weight=650';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       id="text26">
+      <path
+         d="m 52.374287,86.143255 v -5.152141 h -1.638143 v -0.738973 h 2.588989 v 5.891114 q 0,1.00769 -0.465088,1.550293 -0.45992,0.54777 -1.312581,0.54777 h -1.312582 v -0.806153 h 1.209229 q 0.465088,0 0.697632,-0.325561 0.232544,-0.320394 0.232544,-0.966349 z m 0,-8.144206 h 0.950846 v 1.204061 h -0.950846 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Menlo;-inkscape-font-specification:Menlo;stroke-width:0.26458332"
+         id="path68"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 57.27838,78.154078 h 3.09025 v 0.764812 h -3.09025 z m -0.630453,5.694743 v -3.586344 h 0.950847 v 3.586344 q 0,0.780314 0.273885,1.147217 0.279052,0.366902 0.857828,0.366902 0.671794,0 1.028361,-0.470255 0.356568,-0.475423 0.356568,-1.35909 v -3.271118 h 0.956014 v 5.777425 h -0.956014 v -0.868164 q -0.253215,0.501261 -0.692464,0.759643 -0.434082,0.258382 -1.018026,0.258382 -0.888835,0 -1.322917,-0.578776 -0.434082,-0.583943 -0.434082,-1.762166 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Menlo;-inkscape-font-specification:Menlo;stroke-width:0.26458332"
+         id="path70"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
