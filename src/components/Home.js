@@ -10,10 +10,10 @@ const Default = props => <MediaQuery {...props} minWidth={768} />;
 const Home = props => (
   <div>
     <Mobile>
-      <img src={name_vertical} alt="" />
+      <img src={name_vertical} alt="" width="200px" />
     </Mobile>
     <Default>
-      <img src={name_horizontal} alt="" />
+      <img src={name_horizontal} alt="" width="400px" />
     </Default>
   </div>
 );
