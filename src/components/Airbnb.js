@@ -1,6 +1,6 @@
 import React from 'react';
 import AirbnbScriptLoaded from './AirbnbScriptLoaded';
-import AirbnbHtmlImport from './AirbnbHtmlImport';
+// import AirbnbHtmlImport from './AirbnbHtmlImport';
 
 function Airbnb() {
   return (
@@ -10,8 +10,8 @@ function Airbnb() {
         flexFlow: 'row wrap'
       }}
     >
-      {/* <AirbnbScriptLoaded /> */}
-      <AirbnbHtmlImport />
+      <AirbnbScriptLoaded />
+      {/* <AirbnbHtmlImport /> */}
     </div>
   );
 }

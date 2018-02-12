@@ -10,7 +10,7 @@ class AirbnbHtmlImport extends Component {
         data-hide-price="false"
         style={{
           width: '450px',
-          height: '500px',
+          height: '450px',
           margin: 'auto'
         }}
       />
