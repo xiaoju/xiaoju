@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from './Home';
 import Home0 from './Home0';
+import Responsive from './Responsive';
 import Bootstrap from './Bootstrap';
 import Airbnb from './Airbnb';
 import Sandbox from './Sandbox';
@@ -16,6 +17,7 @@ function App(props) {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
+        <Route path="/Responsive" component={Responsive} />
         <Route path="/bootstrap" component={Bootstrap} />
         <Route path="/sandbox" component={Sandbox} />
         <Route path="/flexbox" component={Flexbox} />

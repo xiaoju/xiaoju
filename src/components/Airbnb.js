@@ -6,15 +6,11 @@ function Airbnb() {
   return (
     <div
       style={{
-        backgroundColor: 'red',
         display: 'flex',
-        flexFlow: 'row wrap',
-        // justifyContent: 'space-around',
-        alignItems: 'center'
-        // alignContent: 'center'
+        flexFlow: 'row wrap'
       }}
     >
-      <AirbnbScriptLoaded />
+      {/* <AirbnbScriptLoaded /> */}
       <AirbnbHtmlImport />
     </div>
   );
