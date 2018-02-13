@@ -5,7 +5,7 @@ const NavigationBar = () => (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#home">React-Bootstrap</a>
+        <a href="/">xiaoju.io</a>
       </Navbar.Brand>
     </Navbar.Header>
     <Nav>
