@@ -18,8 +18,9 @@ function App(props) {
       <div
         style={{
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           height: '100%'
         }}
       >
