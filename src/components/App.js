@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import MediaQuery from 'react-responsive';
 
 import NaviBar from './NaviBar';
 import Home from './Home';
@@ -8,9 +7,6 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Airbnb from './Airbnb';
 import PageNotFound from './PageNotFound';
-
-const Mobile = props => <MediaQuery {...props} maxWidth={767} />;
-const Default = props => <MediaQuery {...props} minWidth={768} />;
 
 function App(props) {
   return (
@@ -31,16 +27,6 @@ function App(props) {
           height: '100%',
           flexGrow: '1'
         }}
-
-        // <MediaQuery minDeviceWidth={768}>
-        //  {(matches) => {
-        // if (matches) {
-        // return <div>Media query matches!</div>;
-        // } else {
-        // return <div>Media query does not match!</div>;
-        // }
-        // }}
-        // </MediaQuery>
       >
         <Switch>
           <Route exact path="/" component={Home} />
