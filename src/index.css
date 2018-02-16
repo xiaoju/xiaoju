@@ -1,7 +1,9 @@
 html,
 body {
   min-height: 100%;
-  background-color: #5d5d5d;
+  /* background-color: #5d5d5d;  */
+  background-color: #062c70;
+  /* dark grey */
   height: 100%;
 }
 
@@ -18,3 +20,11 @@ body {
   padding: 7px 14px;
 }
 
+.navbar,
+.navbar-default {
+  background-image: linear-gradient(
+    to bottom,
+    #0e0140 0,
+    #070020 100%
+  ) !important; /* override background image gradient w/ flat color */
+}

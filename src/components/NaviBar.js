@@ -5,7 +5,7 @@ import logo from '../pictures/logo.svg';
 class NaviBar extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect style={{ marginBottom: '0px' }}>
+      <Navbar inverse collapseOnSelect style={{ marginBottom: '0.3em' }}>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="/">
