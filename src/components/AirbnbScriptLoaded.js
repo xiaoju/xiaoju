@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import scriptLoader from 'react-async-script-loader';
 
 const AirbnbScriptLoaded = ({ isScriptLoaded, isScriptLoadSucceed }) => {

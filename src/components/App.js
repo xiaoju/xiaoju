@@ -5,6 +5,7 @@ import NaviBar from './NaviBar';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Airbnb from './Airbnb';
 import PageNotFound from './PageNotFound';
 
 function App(props) {
@@ -28,6 +29,7 @@ function App(props) {
           <Route exact path="/" component={Home} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
+          <Route path="/airbnb" component={Airbnb} />
           <Route component={PageNotFound} />
         </Switch>
       </div>
