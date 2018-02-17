@@ -34,6 +34,11 @@ body {
   display: block;
 }
 
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-toggle:active .icon-bar {
+  background-color: #fff;
+}
+
 .navbar,
 .navbar-default {
   background-image: linear-gradient(
@@ -78,6 +83,7 @@ body {
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
   background-color: #062c70;
+  border-color: #fff;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #7eabff;
