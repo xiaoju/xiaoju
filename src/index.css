@@ -20,6 +20,20 @@ body {
   padding: 7px 14px;
 }
 
+/* logo swapping when hovered over */
+/* if not hovered, hide this version */
+.logo_swapping .logo_hover {
+  display: none;
+}
+.logo_swapping:hover .logo_passive,
+.logo_swapping:active .logo_passive {
+  display: none;
+}
+.logo_swapping:hover .logo_hover,
+.logo_swapping:active .logo_hover {
+  display: block;
+}
+
 .navbar,
 .navbar-default {
   background-image: linear-gradient(

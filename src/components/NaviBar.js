@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import logo from '../pictures/logo.svg';
+import logo_passive from '../pictures/logo.svg';
+import logo_hover from '../pictures/logo_hover.svg';
 
 class NaviBar extends Component {
   render() {
@@ -8,8 +9,19 @@ class NaviBar extends Component {
       <Navbar inverse collapseOnSelect style={{ marginBottom: '0.3em' }}>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="/">
-              <img src={logo} height="50" alt="logo" />xiaoju.io
+            <a href="/" className="logo_swapping">
+              <img
+                className="logo_passive"
+                src={logo_passive}
+                height="50"
+                alt="logo"
+              />
+              <img
+                className="logo_hover"
+                src={logo_hover}
+                height="50"
+                alt="logo"
+              />xiaoju.io
             </a>
           </Navbar.Brand>
           <Navbar.Toggle />
