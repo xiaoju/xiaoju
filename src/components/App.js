@@ -6,6 +6,7 @@ import Home from './Home';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Airbnb from './Airbnb';
+import Leboncoin from './Leboncoin';
 import PageNotFound from './PageNotFound';
 
 function App(props) {
@@ -33,6 +34,7 @@ function App(props) {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
           <Route path="/airbnb" component={Airbnb} />
+          <Route path="/leboncoin" component={Leboncoin} />
           <Route component={PageNotFound} />
         </Switch>
       </div>
