@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="75.767311"
+   height="76.247993"
+   id="svg3070"
+   version="1.1"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="inIcon-01.svg"
+   inkscape:export-filename="/Users/xiaoju/Documents/PROJECTS/udacity_assignements/34-xiaoju/linkedin_logo/LinkedIn_Logo.png"
+   inkscape:export-xdpi="151.08594"
+   inkscape:export-ydpi="151.08594">
+  <defs
+     id="defs3072" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#405632"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="9.828142"
+     inkscape:cy="46.20155"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3075">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="new">
+    <path
+       style="fill:#062c70;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.01882696"
+       d="M 5.5996094 0 C 2.5072594 0 1.1842379e-15 2.4471606 0 5.4628906 L 0 70.785156 C 0 73.801896 2.5072594 76.248047 5.5996094 76.248047 L 70.167969 76.248047 C 73.260209 76.248047 75.767578 73.801896 75.767578 70.785156 L 75.767578 5.4628906 C 75.767578 2.4471606 73.260209 -1.1842379e-15 70.167969 0 L 5.5996094 0 z M 17.320312 12.798828 C 21.235363 12.798828 23.646303 15.369617 23.720703 18.748047 C 23.720703 22.052107 21.236844 24.697266 17.246094 24.697266 L 17.169922 24.697266 C 13.329452 24.697266 10.847656 22.052107 10.847656 18.748047 C 10.847656 15.369617 13.405672 12.798828 17.320312 12.798828 z M 51.056641 28.589844 C 58.585881 28.589844 64.232422 33.510508 64.232422 44.085938 L 64.232422 63.828125 L 52.789062 63.828125 L 52.789062 45.408203 C 52.789062 40.779673 51.133208 37.623047 46.992188 37.623047 C 43.830768 37.623047 41.948374 39.750651 41.121094 41.806641 C 40.818934 42.542231 40.744141 43.570589 40.744141 44.599609 L 40.744141 63.828125 L 29.300781 63.828125 C 29.300781 63.828125 29.450961 32.627184 29.300781 29.396484 L 40.744141 29.396484 L 40.744141 34.277344 C 42.263743 31.930769 44.977408 28.589844 51.056641 28.589844 z M 40.744141 34.277344 C 40.720532 34.3138 40.691006 34.354667 40.667969 34.390625 L 40.744141 34.390625 L 40.744141 34.277344 z M 11.523438 29.396484 L 22.966797 29.396484 L 22.966797 63.828125 L 11.523438 63.828125 L 11.523438 29.396484 z "
+       id="path14" />
+  </g>
+</svg>

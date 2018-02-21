@@ -18,7 +18,7 @@ function App(props) {
         height: '100%'
       }}
     >
-      <NaviBar />
+      <Route path="/:activeItem?" component={NaviBar} />
       <div
         style={{
           display: 'flex',
@@ -35,6 +35,7 @@ function App(props) {
           <Route path="/contact" component={Contact} />
           <Route path="/airbnb" component={Airbnb} />
           <Route path="/leboncoin" component={Leboncoin} />
+          <Route path="/github" component={Portfolio} />
           <Route component={PageNotFound} />
         </Switch>
       </div>

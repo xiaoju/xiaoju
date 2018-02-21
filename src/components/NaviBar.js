@@ -3,6 +3,10 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import logo_passive from '../pictures/logo.svg';
 import logo_hover from '../pictures/logo_hover.svg';
 
+function handleSelect(selectedKey) {
+  alert(`selected ${selectedKey}`);
+}
+
 class NaviBar extends Component {
   render() {
     return (
@@ -17,7 +21,7 @@ class NaviBar extends Component {
                 alt="logo"
               />
               <img
-                className="logo_hover"
+                className="logo_hover xj-logo"
                 src={logo_hover}
                 height="50"
                 alt="logo"
@@ -28,9 +32,9 @@ class NaviBar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav />
-          <Nav pullRight>
+          <Nav pullRight activeKey={1} onSelect={handleSelect}>
             <NavItem eventKey={1} href="/portfolio">
-              Portfolio
+              Github portfolio
             </NavItem>
             <NavItem eventKey={2} href="/contact">
               Contact

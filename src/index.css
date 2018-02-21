@@ -1,10 +1,43 @@
 html,
 body {
   min-height: 100%;
-  /* background-color: #5d5d5d;  */
   background-color: #062c70;
-  /* dark grey */
   height: 100%;
+}
+
+a,
+html,
+body {
+  color: #062c70;
+}
+
+.xj-footer {
+  background-color: #fff7d3;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+  width: 100%;
+  color: #062c70;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.xj-card {
+  background-color: #fff7d3;
+  padding: 2em;
+  margin: 1em 0 1em 0;
+  width: 100%;
+  color: #062c70;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row {
+  flex-flow: row wrap;
+}
+
+.flex-column {
+  flex-flow: column wrap;
 }
 
 #root {
@@ -71,12 +104,15 @@ body {
   color: #ffffff;
   background-color: #7eabff;
 }
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
+
+.navbar-inverse .navbar-nav > .active,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #7eabff;
+  background: rgba(0, 0, 0, 0);
 }
+
 .navbar-inverse .navbar-toggle {
   border-color: #7eabff;
 }
