@@ -3,12 +3,18 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import logo_passive from '../pictures/logo.svg';
 import logo_hover from '../pictures/logo_hover.svg';
 
-function handleSelect(selectedKey) {
-  alert(`selected ${selectedKey}`);
-}
-
 class NaviBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeKey: this.props.match.params.activeKey
+    };
+  }
+
+  handleSelect = (e, { activeKey }) => this.setState({ activeKey: activeKey });
+
   render() {
+    const { activeKey } = this.state;
     return (
       <Navbar inverse collapseOnSelect style={{ marginBottom: '0.3em' }}>
         <Navbar.Header>
@@ -32,11 +38,11 @@ class NaviBar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav />
-          <Nav pullRight activeKey={1} onSelect={handleSelect}>
-            <NavItem eventKey={1} href="/portfolio">
+          <Nav pullRight activeKey={activeKey} onSelect={this.handleSelect}>
+            <NavItem eventKey="portfolio" href="/portfolio">
               Github portfolio
             </NavItem>
-            <NavItem eventKey={2} href="/contact">
+            <NavItem eventKey="contact" href="/contact">
               Contact
             </NavItem>
           </Nav>

@@ -19,14 +19,14 @@ const Home = props => (
   >
     <Mobile>
       <img
-        style={{ flexGrow: '1' }}
+        style={{ flexGrow: '1', minHeight: '100%' }}
         src={name_vertical}
         alt="小驹: xiaoju.io"
       />
     </Mobile>
     <Default>
       <img
-        style={{ flexGrow: '1' }}
+        style={{ flexGrow: '1', minHeight: '100%' }}
         src={name_horizontal}
         alt="小驹: xiaoju.io"
       />

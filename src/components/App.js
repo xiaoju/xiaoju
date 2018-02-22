@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+// import Roboto from 'typeface-roboto-mono';
 
 import NaviBar from './NaviBar';
 import Home from './Home';
@@ -18,7 +19,7 @@ function App(props) {
         height: '100%'
       }}
     >
-      <Route path="/:activeItem?" component={NaviBar} />
+      <Route path="/:activeKey?" component={NaviBar} />
       <div
         style={{
           display: 'flex',
