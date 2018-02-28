@@ -1,8 +1,8 @@
 import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
-import linkedinIcon from '../pictures/inIcon.svg';
-import githubIcon from '../pictures/githubIcon.svg';
-import gpsIcon from '../pictures/gpsIcon.svg';
+import iconLn from '../pictures/iconLn.svg';
+import iconGithub from '../pictures/iconGithub.svg';
+import iconGps from '../pictures/iconGps.svg';
 
 function Contact() {
   return (
@@ -11,7 +11,6 @@ function Contact() {
         display: 'flex',
         flexDirection: 'column',
         width: '100%'
-        // justifyContent: 'space-around'
       }}
     >
       <div className="xj-card flex-column">
@@ -32,7 +31,7 @@ function Contact() {
 
       <div className="xj-footer">
         <p>
-          <img src={gpsIcon} height="17" alt="location: " /> Toulouse, France
+          <img src={iconGps} height="17" alt="location: " /> Toulouse, France
         </p>
         <p>
           <Glyphicon glyph="envelope" style={{ fontSize: '1.2em' }} />
@@ -40,17 +39,13 @@ function Contact() {
         </p>
         <p>
           <a href="https://github.com/xiaoju">
-            <img src={githubIcon} height="17" alt="github repo address: " />{' '}
+            <img src={iconGithub} height="17" alt="github repo address: " />{' '}
             github.com/xiaoju
           </a>
         </p>
         <p>
           <a href="http://www.linkedin.com/in/sourcing">
-            <img
-              src={linkedinIcon}
-              height="17"
-              alt="linkedin profile address: "
-            />{' '}
+            <img src={iconLn} height="17" alt="linkedin profile address: " />{' '}
             linkedin.com/in/sourcing
           </a>
         </p>

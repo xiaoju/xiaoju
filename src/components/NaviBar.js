@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import logo_passive from '../pictures/logo.svg';
-import logo_hover from '../pictures/logo_hover.svg';
+import iconXiaoju_passive from '../pictures/iconXiaoju.svg';
+import iconXiaoju_hover from '../pictures/iconXiaoju_hover.svg';
 
 class NaviBar extends Component {
   constructor(props) {
@@ -22,13 +22,13 @@ class NaviBar extends Component {
             <a href="/" className="logo_swapping">
               <img
                 className="logo_passive"
-                src={logo_passive}
+                src={iconXiaoju_passive}
                 height="50"
                 alt="logo"
               />
               <img
                 className="logo_hover xj-logo"
-                src={logo_hover}
+                src={iconXiaoju_hover}
                 height="50"
                 alt="logo"
               />xiaoju.io
@@ -40,7 +40,7 @@ class NaviBar extends Component {
           <Nav />
           <Nav pullRight activeKey={activeKey} onSelect={this.handleSelect}>
             <NavItem eventKey="portfolio" href="/portfolio">
-              Github portfolio
+              Portfolio
             </NavItem>
             <NavItem eventKey="contact" href="/contact">
               Contact

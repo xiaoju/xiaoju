@@ -1,8 +1,12 @@
 html,
 body {
   min-height: 100%;
-  background-color: #062c70;
+  background-color: #7eabff;
   height: 100%;
+}
+
+h3 {
+  color: #7eabff;
 }
 
 a,
@@ -11,8 +15,20 @@ body {
   color: #062c70;
 }
 
+.navbar-inverse {
+  border-radius: 0px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
 .xj-footer {
-  background-color: #fff7d3;
+  /* background-color: #fff7d3; */
+  background-color: #7eabff;
   padding: 1em;
   margin: 1em 0 1em 0;
   width: 100%;
@@ -23,13 +39,40 @@ body {
 }
 
 .xj-card {
-  background-color: #fff7d3;
-  padding: 2em;
-  margin: 1em 0 1em 0;
-  width: 100%;
+  flex: 0 1 24%;
+  background-color: #fff;
+  border-radius: 1em;
+  /* webkit-box-shadow: 0 10px 6px -6px #777;
+  moz-box-shadow: 0 10px 6px -6px #777; */
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.3),
+    0 0.5em 1em 0 rgba(0, 0, 0, 0.3);
+  margin: 1em 0.25em 1em 0.25em;
   color: #062c70;
   display: flex;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.xj-card > h4 {
+  margin: 0.6em auto;
+  max-height: 1em;
+}
+
+.xj-card > p {
+  flex-grow: 1;
+  text-align: justify;
+  padding: 1em;
+  margin-bottom: 0px;
+}
+
+.xj-card:hover {
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.3), 0 1em 2em 0 rgba(0, 0, 0, 0.3);
+}
+
+.xj-card > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 
 .flex-row {
@@ -86,7 +129,7 @@ body {
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
+  color: #fff;
 }
 .navbar-inverse .navbar-text {
   color: #7eabff;
@@ -96,20 +139,14 @@ body {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
-}
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #7eabff;
+  color: #fff;
 }
 
 .navbar-inverse .navbar-nav > .active,
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ffffff;
+  color: #fff;
   background: transparent;
 }
 
