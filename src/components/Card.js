@@ -1,10 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Carousel, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import iconGithub from '../pictures/iconGithub.svg';
 import iconUdacity from '../pictures/iconUdacity.svg';
 import iconLink from '../pictures/iconLink.svg';
-import LinkWithTooltip from './LinkWithTooltip';
-import image1 from '../pictures/artandnight-home_artistes_v.jpg';
 
 function Card(props) {
   function IconLinkWithTooltip({
@@ -33,47 +32,18 @@ function Card(props) {
 
   return (
     <div className="xj-card">
-      <h4>{props.title}</h4>
+      <h4>
+        <a href={props.webLink}>{props.title}</a>
+      </h4>
       <Carousel interval={null}>
-        <Carousel.Item>
-          <img width={350} height={250} alt="350x250" src={image1} />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            width={350}
-            height={250}
-            alt="350x250"
-            src="https://placeimg.com/350/250/people"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            width={350}
-            height={250}
-            alt="350x250"
-            src="https://placeimg.com/350/250/arch"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            width={350}
-            height={250}
-            alt="350x250"
-            src="https://placeimg.com/350/250/animals"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            width={350}
-            height={250}
-            alt="350x250"
-            src="https://placeimg.com/350/250/tech"
-          />
-        </Carousel.Item>
+        {props.pictures.length &&
+          props.pictures.map((thisPict, index) => (
+            <Carousel.Item key={index}>
+              <img width={350} height={250} alt="350x250" src={thisPict} />
+            </Carousel.Item>
+          ))}
       </Carousel>
-
       <p>{props.text}</p>
-
       {props.udacityLink && (
         <IconLinkWithTooltip
           id="tooltip-udacity"
@@ -87,17 +57,18 @@ function Card(props) {
         />
       )}
 
-      <div
-        style={{
-          display: 'flex',
-          flexFlow: 'row wrap',
-          maxWidth: '12em',
-          border: 'solid thin'
-        }}
-      >
-        <p>Built with </p>
-        {props.builtWith &&
-          props.builtWith.map(item => (
+      {props.techno && (
+        <div
+          style={{
+            display: 'flex',
+            flexFlow: 'row wrap',
+            maxWidth: '12em',
+            border: 'solid thin'
+          }}
+        >
+          <p>Built with </p>
+
+          {props.techno.map(item => (
             <IconLinkWithTooltip
               key={item.alt}
               id={item.alt}
@@ -110,14 +81,15 @@ function Card(props) {
               style={{ margin: '0.3em' }}
             />
           ))}
-      </div>
+        </div>
+      )}
       <div>
         <IconLinkWithTooltip
           id="tooltip-siteLink"
           alt="Link to website"
           tooltip="Check it live!"
           placement="top"
-          href={props.webPreview}
+          href={props.webLink}
           srcIcon={iconLink}
           height="17"
           style={{ margin: '0.3em' }}
@@ -138,3 +110,19 @@ function Card(props) {
 }
 
 export default Card;
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  githubRepo: PropTypes.string.isRequired,
+  status: PropTypes.string,
+  webLink: PropTypes.string,
+  techno: PropTypes.array,
+  pictures: PropTypes.array.isRequired
+  // key: PropTypes.string.isRequired,
+  // href: PropTypes.string.isRequired,
+  // placement: PropTypes.string.isRequired,
+  // srcIcon: PropTypes.func.isRequired,
+  // height: PropTypes.string.isRequired,
+  // style: PropTypes.object.isRequired
+};

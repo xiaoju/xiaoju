@@ -11,6 +11,7 @@ import iconCSS from '../pictures/iconCSS.svg';
 import iconStripe from '../pictures/iconStripe.svg';
 import iconIos from '../pictures/iconIos.svg';
 import iconAndroid from '../pictures/iconAndroid.svg';
+import iconReactrouter from '../pictures/iconReactrouter.svg';
 
 export const Icon = {
   javascript: {
@@ -90,5 +91,11 @@ export const Icon = {
     title: 'React Native',
     link: 'http://facebook.github.io/react-native/',
     icon: iconReactnative
+  },
+  reactrouter: {
+    alt: 'React Router',
+    title: 'React Router',
+    link: 'https://reactjs.org/',
+    icon: iconReactrouter
   }
 };
