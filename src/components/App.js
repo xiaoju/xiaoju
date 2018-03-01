@@ -9,6 +9,7 @@ import Contact from './Contact';
 import Airbnb from './Airbnb';
 import Leboncoin from './Leboncoin';
 import PageNotFound from './PageNotFound';
+import ReactSlickDemo from './ReactSlickDemo';
 
 function App(props) {
   return (
@@ -37,6 +38,7 @@ function App(props) {
           <Route path="/airbnb" component={Airbnb} />
           <Route path="/leboncoin" component={Leboncoin} />
           <Route path="/github" component={Portfolio} />
+          <Route path="/slick" component={ReactSlickDemo} />
           <Route component={PageNotFound} />
         </Switch>
       </div>

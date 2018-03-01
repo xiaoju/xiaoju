@@ -9,6 +9,10 @@ h3 {
   color: #7eabff;
 }
 
+.container {
+  width: 90%;
+}
+
 a,
 html,
 body {
@@ -17,13 +21,6 @@ body {
 
 .navbar-inverse {
   border-radius: 0px;
-}
-
-.cardContainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  flex-grow: 1;
 }
 
 .xj-footer {
@@ -38,15 +35,24 @@ body {
   flex-flow: row wrap;
 }
 
+.cardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 85%;
+  /* flex-grow: 1; */
+}
+
 .xj-card {
-  flex: 0 1 24%;
+  /* flex: 0 1 22%; */
+  flex: 0 1 calc(33% - 3em);
   background-color: #fff;
   border-radius: 1em;
   /* webkit-box-shadow: 0 10px 6px -6px #777;
   moz-box-shadow: 0 10px 6px -6px #777; */
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.3),
     0 0.5em 1em 0 rgba(0, 0, 0, 0.3);
-  margin: 1em 0.25em 1em 0.25em;
+  margin: 1em 1em 1em 1em;
   color: #062c70;
   display: flex;
   flex-flow: column nowrap;

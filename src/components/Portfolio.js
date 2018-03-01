@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import { Icon } from '../utils/Icon';
+import LinkWithTooltip from './LinkWithTooltip';
 
 function Portfolio() {
   return (
@@ -49,6 +50,7 @@ function Portfolio() {
         text="1st project, interfacing to Udacity backend."
         githubRepo="https://github.com/xiaoju/react_nd-01-myreads"
         webPreview="http://myreads.xiaoju.io"
+        udacityLink="https://eu.udacity.com/course/react-nanodegree--nd019"
         builtWith={[Icon.javascript, Icon.react]}
       />
       <Card
@@ -56,13 +58,14 @@ function Portfolio() {
         text="Complete blogging webapp built from scratch using using React, Redux and vanilla CSS styling."
         githubRepo="https://github.com/xiaoju/react_nd-02b"
         webPreview="http://readable.xiaoju.io"
+        udacityLink="https://eu.udacity.com/course/react-nanodegree--nd019"
         builtWith={[Icon.vagrant, Icon.css]}
       />
       <Card
         title="MobileFlashCards"
         text="A flashcards mobile app for iOS and Android, built with React Native."
         githubRepo="https://github.com/xiaoju/react_nd-03-MobileFlashCards"
-        webPreview=""
+        udacityLink="https://eu.udacity.com/course/react-nanodegree--nd019"
         builtWith={[Icon.reactnative, Icon.android, Icon.ios]}
       />
     </div>

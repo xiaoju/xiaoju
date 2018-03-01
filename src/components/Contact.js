@@ -35,7 +35,10 @@ function Contact() {
         </p>
         <p>
           <Glyphicon glyph="envelope" style={{ fontSize: '1.2em' }} />
-          <a href="mailto:info@xiaoju.io?subject=xiaoju - "> info@xiaoju.io</a>
+          <a href="mailto:jerome@xiaoju.io?subject=xiaoju.io - contact&body=Hi Jerome,">
+            {' '}
+            jerome@xiaoju.io
+          </a>
         </p>
         <p>
           <a href="https://github.com/xiaoju">
