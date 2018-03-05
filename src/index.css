@@ -9,9 +9,9 @@ body {
   height: 100%;
 }
 
-h3 {
+/* h3 {
   color: #7eabff;
-}
+} */
 
 .container {
   width: 90%;
@@ -48,24 +48,28 @@ body {
 
 /* desktop size: 3 columns */
 .xj-card {
-  flex: 0 1 calc(33% - 3em);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 1 calc(33% - 2em);
   background-color: #fff;
   border-radius: 1em;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.3),
     0 0.5em 1em 0 rgba(0, 0, 0, 0.3);
   margin: 1em 1em 1em 1em;
   color: #062c70;
-  /* width: 100%; */
 }
 
 .xj-card:hover {
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.3), 0 1em 2em 0 rgba(0, 0, 0, 0.3);
 }
 
-.xj-card > h4 {
+/* .xj-card > h4 {
   margin: 0.6em auto;
   max-height: 1em;
-}
+  background: transparent;
+} */
 
 .xj-card > p {
   flex-grow: 1;
@@ -74,10 +78,40 @@ body {
   margin-bottom: 0px;
 }
 
+.xj-card > h4 > a:link {
+  color: #062c70;
+}
+
+.xj-card > h4 > a:visited {
+  color: #062c70;
+}
+
+.xj-card > h4 > a:hover {
+  color: #7eabff;
+}
+
 .xj-card > div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+}
+
+.xj-labels-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.xj-card > .xj-label,
+.xj-labels-row > .xj-label {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: solid thin;
+  border-color: #062c70;
+  border-radius: 0.5em;
+  align-items: center;
+  margin: 0.3em;
 }
 
 /* .flex-row {

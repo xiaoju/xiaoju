@@ -16,61 +16,61 @@ import iconReactrouter from '../pictures/iconReactrouter.svg';
 export const Icon = {
   javascript: {
     alt: 'javascript',
-    title: 'Javascript',
+    title: 'built with Javascript',
     link: 'https://developer.mozilla.org/bm/docs/Web/JavaScript',
     icon: iconJavascript
   },
   react: {
     alt: 'react',
-    title: 'React',
+    title: 'built with React',
     link: 'https://reactjs.org/',
     icon: iconReact
   },
   semanticui: {
     alt: 'Semantic-UI',
-    title: 'Semantic-UI',
+    title: 'built with Semantic-UI',
     link: 'https://semantic-ui.com/',
     icon: iconSemanticUI
   },
   bootstrap: {
     alt: 'Bootstrap',
-    title: 'Bootstrap',
+    title: 'built with Bootstrap',
     link: 'https://getbootstrap.com/',
     icon: iconBootstrap
   },
   nodejs: {
     alt: 'node.js',
-    title: 'node.js',
+    title: 'built with node.js',
     link: 'https://nodejs.org',
     icon: iconNodejs
   },
   expressjs: {
     alt: 'express.js',
-    title: 'express.js',
+    title: 'built with express.js',
     link: 'https://expressjs.com',
     icon: iconExpressjs
   },
   stripe: {
     alt: 'Stripe',
-    title: 'Stripe',
+    title: 'built with Stripe API',
     link: 'https://stripe.com',
     icon: iconStripe
   },
   vagrant: {
     alt: 'Vagrant',
-    title: 'Vagrant',
+    title: 'built with Vagrant',
     link: 'https://www.vagrantup.com/',
     icon: iconVagrant
   },
   junos: {
     alt: 'Juniper Junos Virtual Routers',
-    title: 'Juniper Junos Virtual Routers',
+    title: 'built with Juniper Junos Virtual Routers',
     link: 'https://www.juniper.net/us/en/dm/free-vmx-trial/',
     icon: iconJunos
   },
   css: {
     alt: 'CSS',
-    title: 'vanilla CSS',
+    title: 'built with vanilla CSS',
     link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     icon: iconCSS
   },
@@ -88,13 +88,13 @@ export const Icon = {
   },
   reactnative: {
     alt: 'React Native',
-    title: 'React Native',
+    title: 'built with React Native',
     link: 'http://facebook.github.io/react-native/',
     icon: iconReactnative
   },
   reactrouter: {
     alt: 'React Router',
-    title: 'React Router',
+    title: 'built with React Router',
     link: 'https://reactjs.org/',
     icon: iconReactrouter
   }
