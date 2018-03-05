@@ -1,3 +1,7 @@
+#root {
+  height: 100%;
+}
+
 html,
 body {
   min-height: 100%;
@@ -40,23 +44,22 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 85%;
-  /* flex-grow: 1; */
 }
 
+/* desktop size: 3 columns */
 .xj-card {
-  /* flex: 0 1 22%; */
   flex: 0 1 calc(33% - 3em);
   background-color: #fff;
   border-radius: 1em;
-  /* webkit-box-shadow: 0 10px 6px -6px #777;
-  moz-box-shadow: 0 10px 6px -6px #777; */
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.3),
     0 0.5em 1em 0 rgba(0, 0, 0, 0.3);
   margin: 1em 1em 1em 1em;
   color: #062c70;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
+  /* width: 100%; */
+}
+
+.xj-card:hover {
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.3), 0 1em 2em 0 rgba(0, 0, 0, 0.3);
 }
 
 .xj-card > h4 {
@@ -71,26 +74,43 @@ body {
   margin-bottom: 0px;
 }
 
-.xj-card:hover {
-  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.3), 0 1em 2em 0 rgba(0, 0, 0, 0.3);
-}
-
 .xj-card > div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
 
-.flex-row {
+/* .flex-row {
   flex-flow: row wrap;
 }
 
 .flex-column {
   flex-flow: column wrap;
+} */
+
+/* tablet size: 2 columns */
+@media screen and (max-width: 949px) {
+  .cardContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .xj-card {
+    flex: 0 1 calc(50% - 3em);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
-#root {
-  height: 100%;
+/* phone size: 1 column */
+@media screen and (max-width: 639px) {
+  .xj-card {
+    flex: 0 1 calc(100% - 3em);
+  }
 }
 
 .navbar-brand {

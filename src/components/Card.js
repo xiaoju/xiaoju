@@ -39,7 +39,12 @@ function Card(props) {
         {props.pictures.length &&
           props.pictures.map((thisPict, index) => (
             <Carousel.Item key={index}>
-              <img width={350} height={250} alt="350x250" src={thisPict} />
+              <img
+                width={550}
+                height={550}
+                alt="website screenshots"
+                src={thisPict}
+              />
             </Carousel.Item>
           ))}
       </Carousel>

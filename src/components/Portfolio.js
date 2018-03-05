@@ -21,11 +21,16 @@ function Portfolio() {
     <div className="cardContainer">
       <Card
         title="art and night"
-        text="A participative platform for art promotion and distribution."
+        text="A participative platform for promotion and distribution of art through innovative channels."
         githubRepo="https://github.com/xiaoju/artandnight"
         status="online"
         webLink="http://www.artandnight.com"
-        techno={[Icon.javascript, Icon.react, Icon.semanticui]}
+        techno={[
+          Icon.javascript,
+          Icon.react,
+          Icon.semanticui,
+          Icon.reactrouter
+        ]}
         pictures={[artandnight1, artandnight2, artandnight0]}
       />
       <Card
@@ -34,7 +39,7 @@ function Portfolio() {
         githubRepo="https://github.com/xiaoju/react_nd-02b"
         status="online"
         webLink="http://www.xiaoju.io"
-        techno={[Icon.javascript, Icon.react, Icon.bootstrap]}
+        techno={[Icon.javascript, Icon.react, Icon.bootstrap, Icon.reactrouter]}
         pictures={[xiaojuio1, animals2, animals3, animals4]}
       />
       <Card
@@ -76,7 +81,7 @@ function Portfolio() {
         githubRepo="https://github.com/xiaoju/react_nd-02b"
         webLink="http://readable.xiaoju.io"
         udacityLink="https://eu.udacity.com/course/react-nanodegree--nd019"
-        techno={[Icon.vagrant, Icon.css]}
+        techno={[Icon.vagrant, Icon.css, Icon.reactrouter]}
         pictures={[animals3, animals1, animals4]}
       />
       <Card
@@ -84,16 +89,16 @@ function Portfolio() {
         text="A flashcards mobile app for iOS and Android, built with React Native."
         githubRepo="https://github.com/xiaoju/react_nd-03-MobileFlashCards"
         udacityLink="https://eu.udacity.com/course/react-nanodegree--nd019"
-        techno={[Icon.reactnative, Icon.android, Icon.ios]}
+        techno={[Icon.reactnative, Icon.android, Icon.ios, Icon.reactrouter]}
         pictures={[animals4, animals1, animals5]}
       />
-      <Card
+      {/* <Card
         title="test"
         text="test text"
         githubRepo="https://github.com/xiaoju/react_nd-03-MobileFlashCards"
         udacityLink="https://eu.udacity.com/course/react-nanodegree--nd019"
         pictures={[animals4, animals1, animals5]}
-      />
+      /> */}
     </div>
   );
 }
