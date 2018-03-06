@@ -12,6 +12,7 @@ import iconStripe from '../pictures/iconStripe.svg';
 import iconIos from '../pictures/iconIos.svg';
 import iconAndroid from '../pictures/iconAndroid.svg';
 import iconReactrouter from '../pictures/iconReactrouter.svg';
+import iconResponsive from '../pictures/iconResponsive.svg';
 
 export const Icon = {
   javascript: {
@@ -97,5 +98,12 @@ export const Icon = {
     title: 'built with React Router',
     link: 'https://reactjs.org/',
     icon: iconReactrouter
+  },
+  responsive: {
+    alt: 'Responsive design',
+    title:
+      'Responsive design: beautiful on any screen size (mobile / tablet / desktop)',
+    link: 'https://reactjs.org/',
+    icon: iconResponsive
   }
 };

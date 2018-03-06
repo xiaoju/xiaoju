@@ -28,6 +28,7 @@ function Portfolio() {
         status="online"
         webLink="http://www.artandnight.com"
         techno={[
+          Icon.responsive,
           Icon.javascript,
           Icon.react,
           Icon.semanticui,
@@ -44,7 +45,7 @@ function Portfolio() {
         githubRepo="https://github.com/xiaoju/react_nd-02b"
         webLink="http://readable.xiaoju.io"
         udacityLink="https://eu.udacity.com/course/react-nanodegree--nd019"
-        techno={[Icon.react, Icon.css, Icon.reactrouter]}
+        techno={[Icon.responsive, Icon.react, Icon.css, Icon.reactrouter]}
         pictures={[animals3, animals1, animals4]}
       />
       <Card
@@ -64,7 +65,13 @@ function Portfolio() {
         githubRepo="https://github.com/xiaoju/react_nd-02b"
         status="online"
         webLink="http://www.xiaoju.io"
-        techno={[Icon.javascript, Icon.react, Icon.bootstrap, Icon.reactrouter]}
+        techno={[
+          Icon.responsive,
+          Icon.javascript,
+          Icon.react,
+          Icon.bootstrap,
+          Icon.reactrouter
+        ]}
         pictures={[xiaojuio1, animals2, animals3, animals4]}
       />
       <Card
@@ -91,6 +98,7 @@ function Portfolio() {
         webLink="http://activelink.xiaoju.io"
         techno={[
           // Icon.javascript,
+          Icon.responsive,
           Icon.react,
           Icon.nodejs,
           // Icon.expressjs,
