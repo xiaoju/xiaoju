@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Carousel, Tooltip, OverlayTrigger } from 'react-bootstrap';
-import iconGithub from '../pictures/iconGithub.svg';
+import iconGithub from '../pictures/iconGithubBlack.svg';
 import iconUdacity from '../pictures/iconUdacity.svg';
 import iconLink from '../pictures/iconLink.svg';
 

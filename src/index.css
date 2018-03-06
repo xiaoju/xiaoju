@@ -9,34 +9,29 @@ body {
   height: 100%;
 }
 
-/* h3 {
-  color: #7eabff;
-} */
-
-.container {
-  width: 90%;
-}
-
 a,
 html,
 body {
   color: #062c70;
 }
 
-.navbar-inverse {
-  border-radius: 0px;
+.xj-footer {
+  background-color: #070020;
+  padding: 0.3em;
+  margin: 1em 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
-.xj-footer {
-  /* background-color: #fff7d3; */
-  background-color: #7eabff;
-  padding: 1em;
-  margin: 1em 0 1em 0;
-  width: 100%;
-  color: #062c70;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+.xj-footer > p {
+  margin: 0.5em 4%;
+}
+
+.xj-footer > .left {
+  margin-right: auto;
 }
 
 .cardContainer {
@@ -65,12 +60,6 @@ body {
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.3), 0 1em 2em 0 rgba(0, 0, 0, 0.3);
 }
 
-/* .xj-card > h4 {
-  margin: 0.6em auto;
-  max-height: 1em;
-  background: transparent;
-} */
-
 .xj-card > p {
   flex-grow: 1;
   text-align: justify;
@@ -80,6 +69,7 @@ body {
 
 .xj-card > h4 > a:link {
   color: #062c70;
+  text-decoration: none;
 }
 
 .xj-card > h4 > a:visited {
@@ -112,6 +102,18 @@ body {
   border-radius: 0.5em;
   align-items: center;
   margin: 0.3em;
+}
+
+/* logo swapping when hovered over */
+/* if not hovered, hide this version */
+.logo_swapping .logo_hover,
+.logo_swapping:hover .logo_passive,
+.logo_swapping:active .logo_passive {
+  display: none;
+}
+.logo_swapping:hover .logo_hover,
+.logo_swapping:active .logo_hover {
+  display: block;
 }
 
 /* .flex-row {
@@ -147,27 +149,31 @@ body {
   }
 }
 
+.container {
+  width: 90%;
+  padding: 10px 15px;
+}
+
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+  margin-bottom: 0.4em;
+}
+
+.navbar-inverse {
+  border-radius: 0px;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.3),
+    0 0.5em 1em 0 rgba(0, 0, 0, 0.3);
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
 }
 
 .navbar-brand > img {
-  padding: 7px 14px;
-}
-
-/* logo swapping when hovered over */
-/* if not hovered, hide this version */
-.logo_swapping .logo_hover {
-  display: none;
-}
-.logo_swapping:hover .logo_passive,
-.logo_swapping:active .logo_passive {
-  display: none;
-}
-.logo_swapping:hover .logo_hover,
-.logo_swapping:active .logo_hover {
-  display: block;
+  padding: 3px 14px;
 }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar,
@@ -194,12 +200,20 @@ body {
 .navbar-inverse .navbar-text {
   color: #7eabff;
 }
+
+.xj-footer > p,
+.xj-footer > p > a,
 .navbar-inverse .navbar-nav > li > a {
   color: #7eabff;
+  text-decoration: none;
 }
+
+.xj-footer > p > a:hover,
+.xj-footer > p > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #fff;
+  text-decoration: none;
 }
 
 .navbar-inverse .navbar-nav > .active,
@@ -215,15 +229,19 @@ body {
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #062c70;
+  background-color: transparent;
   border-color: #fff;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #7eabff;
 }
+.navbar-inverse .navbar-toggle:focus .icon-bar {
+  background-color: #fff;
+}
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #7eabff;
+  margin-top: 0.7em;
 }
 .navbar-inverse .navbar-link {
   color: #7eabff;

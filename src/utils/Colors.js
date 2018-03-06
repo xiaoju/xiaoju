@@ -3,5 +3,6 @@ export const Colors = {
   brightBlue: '#7eabff',
   background: '#fff',
   barLow: '#0e0140',
-  barTop: '#070020'
+  barTop: '#070020',
+  lightYellow: '#fff7d3'
 };

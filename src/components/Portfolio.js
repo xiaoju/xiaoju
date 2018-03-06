@@ -36,7 +36,7 @@ function Portfolio() {
         pictures={[artandnight1, artandnight2, artandnight0]}
       />
       <Card
-        title="Readable"
+        title="readable"
         text={[
           'Complete blogging webapp built from scratch using with React, Redux and vanilla CSS styling.',
           'Second project for React Udacity NanoDegree.'

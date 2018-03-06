@@ -27,7 +27,7 @@ class NaviBar extends Component {
                 alt="logo"
               />
               <img
-                className="logo_hover xj-logo"
+                className="logo_hover"
                 src={iconXiaoju_hover}
                 height="50"
                 alt="logo"
@@ -37,7 +37,7 @@ class NaviBar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav />
+          {/* <Nav /> */}
           <Nav pullRight activeKey={activeKey} onSelect={this.handleSelect}>
             <NavItem eventKey="portfolio" href="/portfolio">
               Portfolio
@@ -45,6 +45,9 @@ class NaviBar extends Component {
             <NavItem eventKey="contact" href="/contact">
               Contact
             </NavItem>
+            <Nav />
+            <Nav />
+            <Nav />
           </Nav>
         </Navbar.Collapse>
       </Navbar>
