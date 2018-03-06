@@ -67,6 +67,10 @@ body {
   margin-bottom: 0px;
 }
 
+.xj-card > p {
+  text-indent: 1em;
+}
+
 .xj-card > h4 > a:link {
   color: #062c70;
   text-decoration: none;

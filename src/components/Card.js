@@ -50,10 +50,10 @@ function Card(props) {
       </Carousel>
       <p>
         {props.text.map(thisLine => (
-          <span>
+          <p>
             {thisLine}
             <br />
-          </span>
+          </p>
         ))}
       </p>
       <div className="xj-labels-row">
