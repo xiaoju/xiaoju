@@ -13,19 +13,20 @@ const Home = props => (
       flexGrow: '1',
       flexDirection: 'column',
       alignItems: 'center',
-      margin: '0% 20% 0% 20%'
+      margin: '0% 20% 0% 20%',
+      height: '87vh'
     }}
   >
     <Mobile>
       <img
-        style={{ flexGrow: '1', minHeight: '100%' }}
+        style={{ flexGrow: '1' }}
         src={xiaoju_vertical}
         alt="小驹: xiaoju.io"
       />
     </Mobile>
     <Default>
       <img
-        style={{ flexGrow: '1', minHeight: '100%' }}
+        style={{ flexGrow: '1' }}
         src={xiaoju_horizontal}
         alt="小驹: xiaoju.io"
       />

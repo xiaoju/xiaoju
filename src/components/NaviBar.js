@@ -31,23 +31,20 @@ class NaviBar extends Component {
                 src={iconXiaoju_hover}
                 height="50"
                 alt="logo"
-              />xiaoju.io
+              />
+              xiaoju.io
             </a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          {/* <Nav /> */}
           <Nav pullRight activeKey={activeKey} onSelect={this.handleSelect}>
-            <NavItem eventKey="portfolio" href="/portfolio">
+            <NavItem eventKey="portfolio" href="#portfolio">
               Portfolio
             </NavItem>
-            <NavItem eventKey="contact" href="/contact">
+            <NavItem eventKey="contact" href="#footer">
               Contact
             </NavItem>
-            <Nav />
-            <Nav />
-            <Nav />
           </Nav>
         </Navbar.Collapse>
       </Navbar>
