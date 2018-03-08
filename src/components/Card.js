@@ -10,8 +10,13 @@ function Card(props) {
   return (
     <div className="xj-card">
       <h4>
-        <a href={props.webLink}>{props.title}</a>
+        {props.title}
+        {/* <a href={props.webLink}>{props.title}</a> */}
       </h4>
+      <a href={props.webLink}>
+        {/* prettier-ignore */}
+        <span className="cardLink"></span>
+      </a>
       <Carousel interval={null}>
         {props.pictures.length &&
           props.pictures.map((thisPict, index) => (
