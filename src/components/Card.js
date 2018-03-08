@@ -1,35 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Carousel, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
+import IconLinkWithTooltip from './IconLinkWithTooltip';
 import iconGithub from '../pictures/iconGithubBlack.svg';
 import iconUdacity from '../pictures/iconUdacity.svg';
 import iconLink from '../pictures/iconLink.svg';
 
 function Card(props) {
-  function IconLinkWithTooltip({
-    id,
-    href,
-    tooltip,
-    placement,
-    srcIcon,
-    height,
-    alt,
-    style
-  }) {
-    return (
-      <OverlayTrigger
-        overlay={<Tooltip id={id}>{tooltip}</Tooltip>}
-        placement={placement}
-        delayShow={150}
-        delayHide={80}
-      >
-        <a href={href}>
-          <img src={srcIcon} height={height} alt={alt} style={style} />
-        </a>
-      </OverlayTrigger>
-    );
-  }
-
   return (
     <div className="xj-card">
       <h4>
@@ -48,14 +25,14 @@ function Card(props) {
             </Carousel.Item>
           ))}
       </Carousel>
-      <p>
-        {props.text.map(thisLine => (
-          <p>
+      <div className="xj-card-description">
+        {props.text.map((thisLine, index) => (
+          <p key={index}>
             {thisLine}
             <br />
           </p>
         ))}
-      </p>
+      </div>
       <div className="xj-labels-row">
         {props.udacityLink && (
           <div className="xj-label">
@@ -91,16 +68,18 @@ function Card(props) {
         )}
 
         <div className="xj-label">
-          <IconLinkWithTooltip
-            id="tooltip-siteLink"
-            alt="Link to website"
-            tooltip="Check it live!"
-            placement="top"
-            href={props.webLink}
-            srcIcon={iconLink}
-            height="20"
-            style={{ margin: '0.3em' }}
-          />
+          {props.webLink && (
+            <IconLinkWithTooltip
+              id="tooltip-siteLink"
+              alt="Link to website"
+              tooltip="Check it live!"
+              placement="top"
+              href={props.webLink}
+              srcIcon={iconLink}
+              height="20"
+              style={{ margin: '0.3em' }}
+            />
+          )}
           <IconLinkWithTooltip
             id="tooltip-github"
             alt="github repo"
@@ -127,10 +106,4 @@ Card.propTypes = {
   webLink: PropTypes.string,
   techno: PropTypes.array,
   pictures: PropTypes.array.isRequired
-  // key: PropTypes.string.isRequired,
-  // href: PropTypes.string.isRequired,
-  // placement: PropTypes.string.isRequired,
-  // srcIcon: PropTypes.func.isRequired,
-  // height: PropTypes.string.isRequired,
-  // style: PropTypes.object.isRequired
 };

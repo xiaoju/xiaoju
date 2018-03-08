@@ -2,7 +2,6 @@ import React from 'react';
 import Card from './Card';
 import { Icon } from '../utils/Icon';
 
-// import underconstruction from '../pictures/underconstruction.jpg';
 import vahana from '../pictures/vahana.jpg';
 import artandnight0 from '../pictures/artandnight0.png';
 import artandnight1 from '../pictures/artandnight1.jpg';
@@ -17,13 +16,6 @@ import mobileFlashCards2 from '../pictures/mobileFlashCards2.jpg';
 import mobileFlashCards3 from '../pictures/mobileFlashCards3.jpg';
 import mobileFlashCards4 from '../pictures/mobileFlashCards4.jpg';
 import mobileFlashCards5 from '../pictures/mobileFlashCards5.jpg';
-
-// import animals1 from '../pictures/animals1.jpeg';
-// import animals2 from '../pictures/animals2.jpeg';
-import animals3 from '../pictures/animals3.jpeg';
-// import animals4 from '../pictures/animals4.jpeg';
-// import animals5 from '../pictures/animals5.jpeg';
-// import animals6 from '../pictures/animals6.jpeg';
 
 function Portfolio() {
   return (
@@ -47,7 +39,6 @@ function Portfolio() {
             'A startup in stealth mode...'
           ]}
           githubRepo="https://github.com/xiaoju/artandnight"
-          status="online"
           webLink="http://www.artandnight.com"
           techno={[
             Icon.responsive,
@@ -95,7 +86,6 @@ function Portfolio() {
             'Responsive design. Based on react-bootstrap with CSS tailoring. Own design for the flexbox cards.'
           ]}
           githubRepo="https://github.com/xiaoju/react_nd-02b"
-          status="online"
           webLink="http://www.xiaoju.io"
           techno={[
             Icon.responsive,
@@ -127,28 +117,26 @@ function Portfolio() {
             'Full stack design including authentication, payment backend and content database fed by user forms.'
           ]}
           githubRepo="https://github.com/xiaoju/activelink"
-          status="work in progress"
-          webLink="http://activelink.xiaoju.io"
+          // webLink="http://activelink.xiaoju.io"
           techno={[
-            Icon.javascript,
             Icon.responsive,
+            Icon.javascript,
             Icon.react,
-            Icon.nodejs,
+            Icon.bootstrap,
             Icon.expressjs,
-            Icon.stripe,
-            Icon.bootstrap
+            Icon.nodejs,
+            Icon.stripe
           ]}
           pictures={[vahana]}
         />
         <Card
-          title="Juniper lab"
+          title="Virtual lab"
           text={[
             'A virtual lab built with Vagrant around Juniper routers, to experiment with network routing protocols.'
           ]}
           githubRepo="https://github.com/xiaoju/junos_vagrant_virtual_lab"
-          status="closed"
           techno={[Icon.vagrant, Icon.junos]}
-          pictures={[animals3]}
+          pictures={[]}
         />
         {/* <Card
         title="test"
