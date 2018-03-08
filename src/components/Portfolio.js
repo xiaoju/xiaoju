@@ -16,6 +16,7 @@ import mobileFlashCards2 from '../pictures/mobileFlashCards2.jpg';
 import mobileFlashCards3 from '../pictures/mobileFlashCards3.jpg';
 import mobileFlashCards4 from '../pictures/mobileFlashCards4.jpg';
 import mobileFlashCards5 from '../pictures/mobileFlashCards5.jpg';
+import vlab1 from '../pictures/vlab1.png';
 
 function Portfolio() {
   return (
@@ -136,7 +137,7 @@ function Portfolio() {
           ]}
           githubRepo="https://github.com/xiaoju/junos_vagrant_virtual_lab"
           techno={[Icon.vagrant, Icon.junos]}
-          pictures={[]}
+          pictures={[vlab1]}
         />
         {/* <Card
         title="test"

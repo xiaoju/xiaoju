@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom';
 import NaviBar from './NaviBar';
 import Home from './Home';
 import Portfolio from './Portfolio';
-// import Contact from './Contact';
 import Airbnb from './Airbnb';
 import Leboncoin from './Leboncoin';
 import PageNotFound from './PageNotFound';
